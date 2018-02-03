@@ -1,0 +1,13 @@
+.TodoTitle {
+    color: red;
+    text-align: center;
+}
+.TodoTitle2 {
+    color: green;
+    text-align: center;
+}
+.counter {
+    font-size: 40px;
+    font-style: bold;
+    text-align: center;
+}
