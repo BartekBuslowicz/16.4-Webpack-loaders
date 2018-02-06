@@ -1,0 +1,13 @@
+.TodoList {
+	list-style-type: none;
+	font-size: 30px;
+	font-style: bold;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 5px;
+	margin: 5px;
+	background-color: grey;
+}
