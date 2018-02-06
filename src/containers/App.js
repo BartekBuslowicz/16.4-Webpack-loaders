@@ -3,6 +3,8 @@ import uuid from 'uuid';
 import style from './App.css';
 import Title from '../components/Title';
 import {TodoList} from '../components/TodoList';
+import TodoForm from '../components/TodoForm';
+
 class App extends React.Component {
     constructor(props){
         super(props);
@@ -28,6 +30,7 @@ class App extends React.Component {
         };
         const data = [...this.state.data, todo];
         this.setState({data});
+        console.log('dodano');
     }
     removeTodo(id) {
         const remainder = this.state.data.filter(todo => todo.id !== id);
@@ -38,6 +41,7 @@ class App extends React.Component {
         return (
             <div className={style.TodoApp}>
                 <Title counterFromParent={this.state.data.length}/>
+                <TodoForm add={this.addTodo.bind(this)}/>
                 <TodoList listFromParent={this.state.data} remove={this.removeTodo.bind(this)}/>
             </div>
         );
